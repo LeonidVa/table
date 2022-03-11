@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 1500px;
+}
+
+.tableBlock, .canvasBlock {
+    width: 33.3333%;
+
+}
+
+.canvasBlock {
+    margin-top: 10px;
+    border: 1px solid black;
+
+}
+
+#container {
+    margin: 100px;
+
+}
+.item-graph {
+    width: 33.33333%;
+}
+
+th {
+    border-bottom: 1px solid black;
+
+    text-align: center;
+}
+
+td{
+    text-align: center
+
+}
+
+.addButton {
+    display: inline-block;
+    font-weight: normal;
+    line-height: 1.1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #5cb85c;
+    margin-top: 10px;
+}
+
+table {
+    width: 80%;
+}
+
+.deleteRow {
+    display: inline-block;
+    font-weight: normal;
+    line-height: 1.1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    color: black;
+    background-color: red;
+    border-color: red;
+}
+
+input[type='number'] {
+    -moz-appearance:textfield;
+    display: inline-block
+
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    display: inline-block
+
+}

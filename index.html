@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Table</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+
+<div class="tableBlock">
+    <table id="firstTable">
+        <tr>
+            <th>X</th>
+            <th>Y</th>
+            <th></th>
+        </tr>
+
+        <tr>
+            <td><input type="number" class="firstTableX"></td>
+            <td><input type="number" class="firstTableY"></td>
+            <td>
+                <button onclick="deleteRow(this)" class="deleteRow" nameOftable="firstTable">Delete</button>
+            </td>
+        </tr>
+        </table>
+    <button onclick="addRowToTable(`firstTable`)" class="addButton">Add</button>
+</div>
+
+
+<div class="tableBlock">
+    <table id="secondTable">
+        <tr>
+            <th>X</th>
+            <th>Y</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td><input type="number" class="secondTableX"></td>
+            <td><input type="number" class="secondTableY"></td>
+            <td>
+                <button onclick="deleteRow(this)" class="deleteRow" nameOftable="secondTable">Delete</button>
+            </td>
+        </tr>
+    </table>
+    <button onclick="addRowToTable(`secondTable`)" nameOftable="secondTable" class="addButton">Add</button>
+</div>
+
+
+<div class="tableBlock">
+    <table id="calculateTable">
+        <tr>
+            <th>X</th>
+            <th>Y</th>
+
+        </tr>
+        <tr>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+        </tr>
+    </table>
+    <button onclick="calculate()" class="addButton">Calculate</button>
+</div>
+
+
+<div class="item-graph">
+    <canvas width="500" height="500" id="firstTableGraph"></canvas>
+</div>
+<div class="item-graph">
+    <canvas width="500" height="500" id="secondTableGraph"></canvas>
+</div>
+<div class="item-graph">
+    <canvas width="500" height="500" id="calculateTableGraph"></canvas>
+</div>
+<script src="script.js"></script>
+
+</body>
+</html>
